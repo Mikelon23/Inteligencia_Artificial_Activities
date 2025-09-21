@@ -16,7 +16,6 @@ def multiplicar_matrices(A, B):
             for k in range(len(B)):
                 resultado[i][j] += A[i][k] * B[k][j]
     return resultado
-
 def main():
     # Ejemplo de uso
     A = [[1, 2], [3, 4]]
