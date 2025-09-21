@@ -1,6 +1,3 @@
-# Calculadora de Matrices en Python
-# Primer proyecto práctico del repositorio "Aprendiendo-IA-Paso-a-Paso"
-
 def mostrar_matriz(matriz, nombre="Matriz"):
     print(f"\n{nombre}:")
     for fila in matriz:
