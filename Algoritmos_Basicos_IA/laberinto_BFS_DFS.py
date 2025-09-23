@@ -66,3 +66,6 @@ def dfs(inicio, meta):
         camino.append(nodo)
         nodo = visitados.get(nodo)
     return camino[::-1]
+if __name__ == "__main__":
+    print("Camino BFS:", bfs(inicio, meta))
+    print("Camino DFS:", dfs(inicio, meta))
