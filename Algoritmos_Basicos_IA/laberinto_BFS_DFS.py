@@ -1,5 +1,3 @@
-# Proyecto práctico del Mes 2
-
 from collections import deque
 
 # Representamos el laberinto como una lista de listas
