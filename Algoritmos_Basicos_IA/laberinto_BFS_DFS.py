@@ -25,7 +25,7 @@ def vecinos(nodo):
         if 0 <= nf < len(laberinto) and 0 <= nc < len(laberinto[0]):
             if laberinto[nf][nc] == 0:
                 yield (nf, nc)
-                
+
 def bfs(inicio, meta):
     cola = deque([inicio])
     visitados = {inicio: None}
@@ -38,6 +38,26 @@ def bfs(inicio, meta):
             if v not in visitados:
                 visitados[v] = nodo
                 cola.append(v)
+    
+    # reconstruir camino
+    camino = []
+    nodo = meta
+    while nodo:
+        camino.append(nodo)
+        nodo = visitados.get(nodo)
+    return camino[::-1]
+def dfs(inicio, meta):
+    pila = [inicio]
+    visitados = {inicio: None}
+    
+    while pila:
+        nodo = pila.pop()
+        if nodo == meta:
+            break
+        for v in vecinos(nodo):
+            if v not in visitados:
+                visitados[v] = nodo
+                pila.append(v)
     
     # reconstruir camino
     camino = []
