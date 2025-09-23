@@ -1,4 +1,3 @@
-# Algoritmos de búsqueda en laberintos (BFS y DFS)
 # Proyecto práctico del Mes 2
 
 from collections import deque
