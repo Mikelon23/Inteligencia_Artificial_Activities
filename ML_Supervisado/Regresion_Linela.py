@@ -16,3 +16,11 @@ nueva_casa = np.array([[90]])
 prediccion = modelo.predict(nueva_casa)
 
 print(f"Precio estimado para una casa de 90 m²: {prediccion[0]:.2f} mil dólares")
+# Visualización
+plt.scatter(X, y, color="blue", label="Datos reales")
+plt.plot(X, modelo.predict(X), color="red", label="Línea de regresión")
+plt.scatter(nueva_casa, prediccion, color="green", label="Predicción")
+plt.xlabel("Metros cuadrados")
+plt.ylabel("Precio (miles de $)")
+plt.legend()
+plt.show()
