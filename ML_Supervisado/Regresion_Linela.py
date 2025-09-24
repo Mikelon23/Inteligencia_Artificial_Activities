@@ -1,6 +1,14 @@
+import matplotlib
+matplotlib.use('Agg')
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
+
+# ...existing code...
+
+plt.legend()
+plt.savefig("regresion.png")  # Save the plot as an image
+# plt.show()  # Comment this out since 'Agg' does not support GUI
 
 # Datos ficticios: metros cuadrados vs precio en miles de dólares
 X = np.array([[50], [60], [80], [100], [120]])
