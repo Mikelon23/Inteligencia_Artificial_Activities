@@ -19,6 +19,6 @@ while True:
     try:
         m2 = float(entrada)
         pred = modelo.predict([[m2]])[0]
-        print(f"Precio estimado: {pred:.2f} mil dólares")
+        print(f"Precio estimado: {pred:.2f} dólares")
     except ValueError:
         print("Por favor ingresa un número válido.")
