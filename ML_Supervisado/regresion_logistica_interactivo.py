@@ -1,3 +1,5 @@
+#Clasifica si un estudiante aprueba o no según horas de estudio.
+
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 
