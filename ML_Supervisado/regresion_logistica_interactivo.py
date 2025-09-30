@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 from sklearn.linear_model import LogisticRegression
 
 # Datos ficticios
@@ -15,7 +14,7 @@ while True:
     if entrada.lower() == "salir":
         break
     
-     try:
+    try:
         horas = float(entrada)
         prob = modelo.predict_proba([[horas]])[0][1]
         resultado = modelo.predict([[horas]])[0]
