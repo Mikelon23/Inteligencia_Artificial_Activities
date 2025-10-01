@@ -6,7 +6,6 @@ from sklearn.linear_model import LinearRegression
 
 plt.legend()
 plt.savefig("regresion.png")  # Save the plot as an image
-# plt.show()  # Comment this out since 'Agg' does not support GUI
 
 # Datos ficticios: metros cuadrados vs precio en miles de dólares
 X = np.array([[50], [60], [80], [100], [120]])
