@@ -21,6 +21,6 @@ while True:
         prob = modelo.predict_proba([[horas]])[0][1]
         resultado = modelo.predict([[horas]])[0]
         print(f"Probabilidad de aprobar: {prob:.2f}")
-        print("Resultado:", "Aprueba ✅" if resultado == 1 else "Reprueba ❌")
+        print("Resultado:", "Aprueba ✅" if resultado == 1 else "Reprueba X")
     except ValueError:
         print("Por favor ingresa un número válido.")
