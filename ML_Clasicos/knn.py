@@ -7,3 +7,9 @@ X = [
     [140, 1],  # Manzana
     [130, 1],  # Manzana
 ]
+
+y = ["naranja", "naranja", "manzana", "manzana"]
+
+modelo = KNeighborsClassifier(n_neighbors=3)
+modelo.fit(X, y)
+
