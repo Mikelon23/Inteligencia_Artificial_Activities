@@ -19,3 +19,7 @@ modelo.fit(X, y)
 nuevo_estudiante = [[3, 6]]
 print("Resultado:", modelo.predict(nuevo_estudiante))
 
+# Visualizar árbol
+plt.figure(figsize=(6,4))
+tree.plot_tree(modelo, feature_names=["Horas estudio", "Horas sueño"], class_names=["reprueba", "aprueba"], filled=True)
+plt.show()
