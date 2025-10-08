@@ -15,3 +15,7 @@ y = ["reprueba", "aprueba", "aprueba", "reprueba"]
 modelo = DecisionTreeClassifier()
 modelo.fit(X, y)
 
+# Predecir
+nuevo_estudiante = [[3, 6]]
+print("Resultado:", modelo.predict(nuevo_estudiante))
+
