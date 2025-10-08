@@ -9,3 +9,9 @@ X = [
     [6, 7],   # Aprueba
     [1, 5],   # Reprueba
 ]
+
+y = ["reprueba", "aprueba", "aprueba", "reprueba"]
+
+modelo = DecisionTreeClassifier()
+modelo.fit(X, y)
+
