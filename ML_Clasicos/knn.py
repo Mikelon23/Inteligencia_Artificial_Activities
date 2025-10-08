@@ -13,3 +13,6 @@ y = ["naranja", "naranja", "manzana", "manzana"]
 modelo = KNeighborsClassifier(n_neighbors=3)
 modelo.fit(X, y)
 
+# Predecir
+nueva_fruta = [[160, 0]]
+print("Clasificación para fruta nueva:", modelo.predict(nueva_fruta))
