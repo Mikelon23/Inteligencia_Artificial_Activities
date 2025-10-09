@@ -8,3 +8,7 @@ y = [0, 0, 0, 1, 1, 1]  # Grupo 0 y grupo 1
 modelo = svm.SVC(kernel='linear')
 modelo.fit(X, y)
 
+# Predecir
+nuevo_punto = [[4, 4]]
+print("Clasificación para el punto (4,4):", modelo.predict(nuevo_punto))
+
