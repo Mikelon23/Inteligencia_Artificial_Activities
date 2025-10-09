@@ -12,3 +12,6 @@ modelo.fit(X, y)
 nuevo_punto = [[4, 4]]
 print("Clasificación para el punto (4,4):", modelo.predict(nuevo_punto))
 
+# Visualización básica
+plt.scatter([p[0] for p in X], [p[1] for p in X], c=y, cmap="coolwarm")
+plt.scatter(4, 4, c="green", marker="x", s=200, label="Nuevo punto")
