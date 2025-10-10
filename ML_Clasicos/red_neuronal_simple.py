@@ -7,5 +7,4 @@ X = np.array([
     [1, 0],
     [1, 1]
 ])
-# Salida esperada
-y = np.array([[0], [1], [1], [0]])
+
