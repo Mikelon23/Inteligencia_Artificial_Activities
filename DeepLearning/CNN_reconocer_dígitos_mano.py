@@ -12,3 +12,4 @@ x_test = x_test / 255.0
 
 # Añadir dimensión de canal (necesaria para Conv2D)
 x_train = x_train.reshape(-1, 28, 28, 1)
+x_test = x_test.reshape(-1, 28, 28, 1)
